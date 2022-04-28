@@ -1,7 +1,7 @@
 import 'dart:io';
 
 class AdHelper {
-  String homepageBanner() {
+  static String homepageBanner() {
     if (Platform.isIOS) {
       return "ca-app-pub-2951068600361614/7118983057";
     } else {
@@ -9,7 +9,7 @@ class AdHelper {
     }
   }
 
-  String DetailsBanner() {
+  static String DetailspageBanner() {
     if (Platform.isIOS) {
       return "ca-app-pub-2951068600361614/1675084681";
     } else {
@@ -17,7 +17,7 @@ class AdHelper {
     }
   }
 
-  String fullPageAds() {
+  static String fullPageAds() {
     if (Platform.isIOS) {
       return "ca-app-pub-2951068600361614/5422758000";
     } else {
