@@ -31,196 +31,196 @@ class _HomePageState extends State<HomePage> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
-              //   SizedBox(
-              //     height: 100,
-              //     width: MediaQuery.of(context).size.width,
-              //     child: Card(
-              //         color: Colors.deepPurpleAccent,
-              //         child: const Center(
-              //             child: Text(
-              //           "Sample Items",
-              //           style: TextStyle(color: Colors.white),
-              //         )),
-              //         shape: RoundedRectangleBorder(
-              //             borderRadius: BorderRadius.circular(8))),
-              //   ),
-              //   const SizedBox(
-              //     height: 5,
-              //   ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              SizedBox(
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                    color: Colors.deepPurpleAccent,
+                    child: const Center(
+                        child: Text(
+                      "Sample Items",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
             ],
           ),
         ),
-        // bottomNavigationBar:
-        //     Consumer<AdsProvider>(builder: (context, AdsProvider, child) {
-        //   if (AdsProvider.isHomepageBannerloaded) {
-        //     return Container(
-        //       height: AdsProvider.homepageBanner.size.height.toDouble(),
-        //       child: AdWidget(ad: AdsProvider.homepageBanner),
-        //     );
-        //   } else {
-        //     return Container();
-        //   }
-        // }),
+        bottomNavigationBar:
+            Consumer<AdsProvider>(builder: (context, AdsProvider, child) {
+          if (AdsProvider.isHomepageBannerloaded) {
+            return Container(
+              height: AdsProvider.homepageBanner.size.height.toDouble(),
+              child: AdWidget(ad: AdsProvider.homepageBanner),
+            );
+          } else {
+            return Container();
+          }
+        }),
       ),
     );
   }
