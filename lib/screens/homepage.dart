@@ -1,5 +1,5 @@
+import 'dart:async';
 import 'package:adsdemo/providers/adsProvider.dart';
-import 'package:adsdemo/services/adsHelper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
@@ -15,9 +15,9 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     //initalizing homepage ad function
-    Provider.of<AdsProvider>(context, listen: false).initializeHomepageAd();
 
     super.initState();
+    Provider.of<AdsProvider>(context, listen: false).initializeHomepageAd();
   }
 
   @override
@@ -215,10 +215,13 @@ class _HomePageState extends State<HomePage> {
           if (AdsProvider.isHomepageBannerloaded) {
             return Container(
               height: AdsProvider.homepageBanner.size.height.toDouble(),
+              width: AdsProvider.homepageBanner.size.width.toDouble(),
               child: AdWidget(ad: AdsProvider.homepageBanner),
             );
           } else {
-            return Container();
+            return Container(
+              height: 0,
+            );
           }
         }),
       ),
