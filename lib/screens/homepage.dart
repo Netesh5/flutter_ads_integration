@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:adsdemo/providers/adsProvider.dart';
+import 'package:adsdemo/screens/nextPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
@@ -17,7 +18,8 @@ class _HomePageState extends State<HomePage> {
     //initalizing homepage ad function
 
     super.initState();
-    Provider.of<AdsProvider>(context, listen: false).initializeHomepageAd();
+    AdsProvider adprovider = Provider.of<AdsProvider>(context, listen: false);
+    adprovider.initializeHomepageAd();
   }
 
   @override
@@ -27,6 +29,15 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Ads Integration"),
+          actions: [
+            TextButton(
+                onPressed: (() => Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => nextPage()))),
+                child: const Text(
+                  "Next page",
+                  style: TextStyle(color: Colors.white),
+                ))
+          ],
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -211,12 +222,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         bottomNavigationBar:
-            Consumer<AdsProvider>(builder: (context, AdsProvider, child) {
-          if (AdsProvider.isHomepageBannerloaded) {
+            Consumer<AdsProvider>(builder: (context, adsProvider, child) {
+          if (adsProvider.isHomepageBannerloaded) {
             return Container(
-              height: AdsProvider.homepageBanner.size.height.toDouble(),
-              width: AdsProvider.homepageBanner.size.width.toDouble(),
-              child: AdWidget(ad: AdsProvider.homepageBanner),
+              height: adsProvider.homepageBanner.size.height.toDouble(),
+              width: adsProvider.homepageBanner.size.width.toDouble(),
+              child: AdWidget(ad: adsProvider.homepageBanner),
             );
           } else {
             return Container(
