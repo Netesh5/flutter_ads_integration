@@ -16,7 +16,7 @@ class _nextPageState extends State<nextPage> {
 
     super.initState();
     AdsProvider adsProvider = Provider.of<AdsProvider>(context, listen: false);
-    adsProvider.initializeDetailpageAd();
+    adsProvider.initializenextpageAd();
     adsProvider.initializeFullpageAd();
   }
 
@@ -39,11 +39,11 @@ class _nextPageState extends State<nextPage> {
           ),
           bottomNavigationBar:
               Consumer<AdsProvider>(builder: (context, AdsProvider, child) {
-            if (AdsProvider.isDetailpageBannerloaded) {
+            if (AdsProvider.isnextpageBannerloaded) {
               return Container(
-                height: AdsProvider.detailPageBanner.size.height.toDouble(),
-                width: AdsProvider.detailPageBanner.size.width.toDouble(),
-                child: AdWidget(ad: AdsProvider.detailPageBanner),
+                height: AdsProvider.nextpageBanner.size.height.toDouble(),
+                width: AdsProvider.nextpageBanner.size.width.toDouble(),
+                child: AdWidget(ad: AdsProvider.nextpageBanner),
               );
             } else {
               return Container(

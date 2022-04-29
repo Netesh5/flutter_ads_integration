@@ -4,11 +4,11 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdsProvider with ChangeNotifier {
   late BannerAd homepageBanner;
-  late BannerAd detailPageBanner;
+  late BannerAd nextpageBanner;
   late InterstitialAd fullPageAd;
 
   bool isHomepageBannerloaded = false;
-  bool isDetailpageBannerloaded = false;
+  bool isnextpageBannerloaded = false;
   bool isFullpageAdloaded = false;
 
   void initializeHomepageAd() async {
@@ -32,22 +32,22 @@ class AdsProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void initializeDetailpageAd() async {
-    detailPageBanner = BannerAd(
+  void initializenextpageAd() async {
+    nextpageBanner = BannerAd(
         size: AdSize.banner,
         adUnitId: AdHelper.DetailspageBanner(),
         listener: BannerAdListener(onAdLoaded: (ad) {
-          isDetailpageBannerloaded = true;
+          isnextpageBannerloaded = true;
           debugPrint("Detail Banner loaded");
         }, onAdClosed: (ad) {
           ad.dispose();
-          isDetailpageBannerloaded = false;
+          isnextpageBannerloaded = false;
         }, onAdFailedToLoad: (ad, error) {
           debugPrint(error.toString());
-          isDetailpageBannerloaded = false;
+          isnextpageBannerloaded = false;
         }),
         request: const AdRequest());
-    await detailPageBanner.load();
+    await nextpageBanner.load();
     notifyListeners();
   }
 
