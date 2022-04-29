@@ -13,19 +13,21 @@ class AdsProvider with ChangeNotifier {
 
   void initializeHomepageAd() async {
     homepageBanner = BannerAd(
-        size: AdSize.banner,
-        adUnitId: AdHelper.homepageBanner(),
-        listener: BannerAdListener(onAdLoaded: (ad) {
-          isHomepageBannerloaded = true;
-          debugPrint("HomePage Banner loaded");
-        }, onAdClosed: (ad) {
-          ad.dispose();
-          isHomepageBannerloaded = false;
-        }, onAdFailedToLoad: (ad, error) {
-          debugPrint(error.toString());
-          isHomepageBannerloaded = false;
-        }),
-        request: AdRequest());
+      adUnitId: AdHelper.homepageBanner(),
+      size: AdSize.banner,
+      request: const AdRequest(),
+      listener: BannerAdListener(onAdLoaded: (ad) {
+        isHomepageBannerloaded = true;
+        debugPrint("HomePage Banner loaded");
+      }, onAdClosed: (ad) {
+        ad.dispose();
+        isHomepageBannerloaded = false;
+        debugPrint("HomePage Banner not loaded");
+      }, onAdFailedToLoad: (ad, error) {
+        debugPrint(error.toString());
+        isHomepageBannerloaded = false;
+      }),
+    );
     await homepageBanner.load();
     notifyListeners();
   }
@@ -36,7 +38,7 @@ class AdsProvider with ChangeNotifier {
         adUnitId: AdHelper.DetailspageBanner(),
         listener: BannerAdListener(onAdLoaded: (ad) {
           isDetailpageBannerloaded = true;
-          debugPrint("HomePage Banner loaded");
+          debugPrint("Detail Banner loaded");
         }, onAdClosed: (ad) {
           ad.dispose();
           isDetailpageBannerloaded = false;
@@ -44,7 +46,7 @@ class AdsProvider with ChangeNotifier {
           debugPrint(error.toString());
           isDetailpageBannerloaded = false;
         }),
-        request: AdRequest());
+        request: const AdRequest());
     await detailPageBanner.load();
     notifyListeners();
   }
@@ -52,7 +54,7 @@ class AdsProvider with ChangeNotifier {
   void initializeFullpageAd() async {
     await InterstitialAd.load(
         adUnitId: AdHelper.fullPageAds(),
-        request: AdRequest(),
+        request: const AdRequest(),
         adLoadCallback: InterstitialAdLoadCallback(onAdLoaded: (ad) {
           fullPageAd = ad;
           debugPrint(fullPageAd.toString());

@@ -229,9 +229,11 @@ class _HomePageState extends State<HomePage> {
               width: adsProvider.homepageBanner.size.width.toDouble(),
               child: AdWidget(ad: adsProvider.homepageBanner),
             );
+            // ignore: dead_code
           } else {
             return Container(
-              height: 0,
+              height: 60,
+              child: const Center(child: Text("Ad not loaded")),
             );
           }
         }),

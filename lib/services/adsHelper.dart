@@ -4,6 +4,7 @@ class AdHelper {
   static String homepageBanner() {
     if (Platform.isIOS) {
       return "ca-app-pub-2951068600361614/7118983057";
+      // return "ca-app-pub-3940256099942544/2934735716";
     } else {
       return "ca-app-pub-2951068600361614/5710532619";
     }
